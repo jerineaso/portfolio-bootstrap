@@ -1,0 +1,78 @@
+a{
+    text-decoration: none;
+}
+/* Home Section */
+#home{
+    height: 68vh;
+}
+#bio{
+    color: #898EA2;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#bio_para{
+    color: #898EA2;
+    margin: 20px 0px;
+}
+
+.my_image{
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+}
+
+.svgs{
+    width: 450px;
+    height: 450px;
+    right: 15%;
+}
+
+.resumeBtn{
+    border-radius: 25px;
+    color:  #252934;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 300;
+    margin:  auto;
+    cursor: pointer;
+    border: 1px solid #FFDB0E;
+    text-transform: uppercase;
+    transition: .5s all;
+}
+
+.resumeBtn:hover{
+    animation: buttonAnimate .8s ease-out;
+}
+
+.scrollDown{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+}
+
+/* Projects */
+#projects{
+    height: 100vh;
+    /* margin-top: 170px; */
+    padding-top: 40px;
+}
+
+.proj-sec{
+    background-color: yellowgreen;
+    height: 400px;
+}
+
+.proj-desc{
+    /* padding-top: 110px; */
+}
+
+@keyframes buttonAnimate{
+    from{
+        background-color: #FFE4E3;
+    }
+    to{
+        background-color: #FFDB0E;
+    }
+}
