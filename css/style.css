@@ -4,6 +4,7 @@ a{
 /* Home Section */
 #home{
     height: 68vh;
+    margin-bottom: 40px;
 }
 #bio{
     color: #898EA2;
@@ -54,7 +55,7 @@ a{
 
 /* Projects */
 #projects{
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-top: 170px; */
     padding-top: 40px;
 }
@@ -64,8 +65,93 @@ a{
     height: 400px;
 }
 
-.proj-desc{
-    /* padding-top: 110px; */
+
+/* Contact */
+.contact{
+    position: relative;
+    background-color: #252934;
+    height: 91vh;
+}
+
+.up{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background: #FFDB0E;
+}
+
+.fa-angle-double-up:before {
+    content: "\f102";
+    color: #252934;
+}
+
+.contact-head{
+    padding-top: 40px;
+    z-index: 1;
+    color: white;
+}
+
+.contact::before{
+    position: absolute;
+    content: '';
+    height: 80px;
+    width: 50%;
+    top: -47px;
+    transform: skewY(7deg) translateY(8px);
+    background-color: #252934;
+    z-index: -1;
+}
+
+.contact::after{
+    position: absolute;
+    content: '';
+    height: 80px;
+    width: 50%;
+    top: -47px;
+    right: 0;
+    transform: skewY(-7deg) translateY(8px);
+    background-color: #252934;
+    z-index: -1;
+}
+
+.contact-mail{
+    color: white;
+    padding-top: 50px;
+}
+
+.social-links a{
+    color: white;
+}
+
+ul .social-links{
+    padding-right: 40px; 
+}
+input[type = 'text'],input[type = 'email'],.form-group textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #252934;
+    color: #FFDB0E;
+}
+
+.form-group textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #252934;
+    color: #FFDB0E;
+}
+
+.subBtn{
+    color: black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    border: 1px solid #FFDB0E;
+    background-color: #FFDB0E;
 }
 
 @keyframes buttonAnimate{
